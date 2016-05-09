@@ -1,0 +1,14 @@
+.arrow-content {
+    margin-top: 50px;
+}
+.img-present {
+    margin: 32px 0px 0px 0px;
+    border: 3px solid #666;
+    border-radius: 30px;
+}
+.img-mini {
+    text-align:center;
+}
+p, h1, h2, h4, li, a, span {
+    font-family: 'Lora', serif;
+}

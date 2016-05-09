@@ -1,0 +1,28 @@
+{% extends 'demo_gallery/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+        <div class="row">
+          <div class="col-md-8">
+            <h1>Viktoriia Davydova</h1>
+            <p>Creating fairy illustrations is my work and my life. I feel great when make written lines alive and  show you  world, created by the writer, as I see it.</p>
+          </div>
+          <div class="col-md-3 pull-right">
+            <img class="img-present" src="{% static 'gallery_demo/images/presentation.jpg' %}" alt="Presented image" height="320px" align="right">
+          </div>
+        </div>
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript">
+    $(function() {
+      $(document).ready(function() {
+        $("#forecast").load("{% url 'list' %}");
+      });
+    });
+</script>
+{% endblock %}

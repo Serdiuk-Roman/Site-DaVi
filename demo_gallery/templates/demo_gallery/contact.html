@@ -1,0 +1,21 @@
+{% extends 'demo_gallery/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+Contact
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-9">
+    <br />
+    <br />
+    <p>Tel: +38 (050) 12 34 308</p>
+    <p>Me on <a href="https://www.behance.net/Davidovavif287" target="_blank" >behance.</a></p>
+    <p>Email: <a href="mailto:someone@example.com">someone@example.com</a></p>
+  </div>
+  <div class="col-md-3">
+    <img class="img-present" src="{% static 'gallery_demo/images/presentation.jpg' %}" alt="Presented images" height="320px" align="right">
+  </div>
+</div>
+{% endblock %}

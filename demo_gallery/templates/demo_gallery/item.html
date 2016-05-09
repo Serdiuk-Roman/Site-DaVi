@@ -1,0 +1,25 @@
+{% extends 'demo_gallery/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+{{ item.name }}
+{% endblock %}
+
+{% block content %}
+<div class="container" style="text-align:center">
+    <h2>{{ item.name }}</h2>
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        {% for photo in photos %}
+        <div class="col-sm-6 col-md-4 img-mini">
+          <h4>{{ photo.title }}</h4>
+          <a href="{{ photo.image.url }}" data-lightbox="{{ item.name }}" data-title="{{ photo.caption }}">
+          <img src="{{ photo.image.url }}" height="240px"></a>
+          <p>{{ photo.caption }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

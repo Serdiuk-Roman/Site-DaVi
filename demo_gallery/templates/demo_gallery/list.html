@@ -1,0 +1,13 @@
+<div class="container">
+    <p>Resent works</p>
+    <div class="row">
+        {% for photo in photos %}
+            <div class="col-md-3 img-mini">
+                <p>{{ photo.title }}<p>
+                <a href="{{ photo.image.url }}" data-lightbox="test-img" data-title="{{ photo.caption }}">
+                <img src="{{ photo.image.url }}" height="120px"></a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
