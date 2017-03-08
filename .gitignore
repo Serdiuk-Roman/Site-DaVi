@@ -1,8 +1,8 @@
 *.pyc
 __pycache__
-myvenv
-tve
+venv_demo_site
 db.sqlite3
 /static
+/media
 .DS_Store
-/photo
+*.geany

@@ -1,0 +1,41 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="{% static 'coder_page/images/favicon.ico' %}">
+        <title>Test site for Nodeads</title>
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    
+    </head>
+
+    <body>
+        <div class="container">
+            <h3><a href="{% url 'home' %}">Home</a></h3>
+            <hr>
+        </div>
+        
+        <div class="container">
+            <h1>Виберіть дату й нажміть "Оновити"</h1>
+        </div>
+        
+        {% block content %}{% endblock %}
+    
+        <div class="container">
+            <hr>
+            <footer>
+                <p>&copy; 2016 Company, Inc.</p>
+            </footer>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <script src="{% static 'nodeads/scripts_charts.js' %}"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    </body>
+</html>

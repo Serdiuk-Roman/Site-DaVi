@@ -20,4 +20,5 @@ def show_item(request, item_id):
 def list(request):
     photo_count = Photo.objects.all().count()
     photos = Photo.objects.all()[photo_count-4:]
+    print('@@@@@@', photos)
     return render_to_response('demo_gallery/list.html', {"photos": photos})
