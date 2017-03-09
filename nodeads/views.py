@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse, JsonResponse
-import requests, json, datetime, collections
+from django.http import JsonResponse
+import json, datetime, collections
 from .models import Culeba
 from urllib.request import urlopen
 
